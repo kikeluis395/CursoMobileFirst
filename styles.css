@@ -99,6 +99,7 @@ main {
 }
 .main-exchange-container {
   width: 100%;
+  min-width: 320px;
   height: auto;
   padding-top: 80px;
   padding-bottom: 30px;
@@ -112,6 +113,7 @@ main {
 }
 .main-exchange-container .backgroundImg {
   width: 200px;
+  min-width: 200px;
   height: 200px;
   margin: 0 auto;
   margin-bottom: 50px;
@@ -132,10 +134,21 @@ main {
   font-weight: 500;
   color: var(--grey-main);
 }
+.main-tables-container {
+  display: flex;
+  width: 70%;
+  min-width: 230px;
+  max-width: 235px;
+  margin: auto;
+  height: auto; 
+  overflow-x: scroll;
+  overscroll-behavior-x: auto;
+  scroll-snap-type: x proximity;
+}
 .main-currency-table {
   width:70%;
+  scroll-snap-align: center;
   min-width: 235px;
-  max-width: 500px;
   height: 300px;
   margin: 0 auto;
   font-family: "Inter", sans-serif;
@@ -160,16 +173,6 @@ main {
   max-width: 300px;
   height: 159px;
   margin: 0 auto;
-}
-.main-currency-table .left {
-  position: absolute;
-  top: 50%;
-  left: calc(100% + 10px);
-}
-.main-currency-table .right {
-  position: absolute;
-  top: 50%;
-  right: calc(100% + 10px);
 }
 .currency-table--container table {
   width: 100%;
@@ -326,13 +329,13 @@ main {
 .plans-container {
   width: 100%;
   min-width: 320px;
-  max-width: 400px;
   margin: 0 auto;
   padding: 14px;
   text-align: center;
   background-color: #e5e5e5;
 }
 .plans-container--title h2{
+  margin:auto;
   margin-top: 35px;
   width: 90%;
   min-width: 288px;
@@ -352,8 +355,7 @@ main {
 .plans--cards-container {
   display: flex;
   width: 100%;
-  min-width: 230px;
-  max-width: 300px;
+  min-width: 195px;
   margin: auto;
   height: auto; 
   overflow-x: scroll;
@@ -368,6 +370,7 @@ main {
   scroll-snap-align: center;
   width: 100%;
   min-width: 190px;
+  max-width: 300px;
   padding: 31px 20px 24px;
   margin: 30px 10px 65px 10px;
   border-radius: 8px;
@@ -391,8 +394,10 @@ main {
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 1.8rem;
+  margin: auto;
 
 }
+
 .plans--card-price {
   position: relative;
   font-size: 52px;
@@ -439,6 +444,8 @@ main {
 }
 .footer-main {
   display: flex;
+  width: 100%;
+  min-width: 320px;
   justify-content: space-around;
   padding: 40px 15px;
   background-color: var(--bitcoin-orange);
