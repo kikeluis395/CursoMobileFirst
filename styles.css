@@ -343,23 +343,33 @@ main {
   margin-bottom: 24px;
 }
 .plans-container--title p {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1.8rem;
   color: var(--grey-main);
 }
 .plans--cards-container {
+  display: flex;
   width: 100%;
-  min-width: 288px;
-  max-width: 400px;
-  height: auto;
+  min-width: 230px;
+  max-width: 300px;
+  margin: auto;
+  height: auto; 
+  overflow-x: scroll;
+  overscroll-behavior-x: auto;
+  scroll-snap-type: x proximity;
+}
+.plans--cards-container-slide {
+  padding:0 41px;
 }
 .plans--card {
   position:relative;
-  width: 70%;
+  scroll-snap-align: center;
+  width: 100%;
+  min-width: 190px;
   padding: 31px 20px 24px;
-  margin: 0 auto;
+  margin: 30px 10px 65px 10px;
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
   background-color: var(--just-white);
@@ -387,12 +397,13 @@ main {
   position: relative;
   font-size: 52px;
   font-weight: bold;
+  font-family: "Inter", sans-serif;
   line-height: 6.3rem;
-  letter-spacing: -0.5rem;
+  letter-spacing: -0.4rem;
 }
 .plans--card-price .dolar {
   position: absolute;
-  left: calc(50% - 35px);
+  left: calc(50% - 40px);
   top: 10px;
   font-size: 1.2rem;
   line-height: 1.5rem;
@@ -407,12 +418,14 @@ main {
 .plans--card-button {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   margin: auto;
   font-size: 1.4rem;
   font-weight: bold;
+  font-family: "DM sans", sans-serif;
   line-height: 1.8rem;
   color: var(--warm-black);
-  padding: 15px 17px 15px 16px;
+  padding: 12px;
   background-color: var(--off-white);
   border: 2px solid var(--bitcoin-orange);
   border-radius: 4px;
@@ -422,5 +435,34 @@ main {
   width: 24px;
   height: 24px;
   background: url(assets/icons/arrow-right.svg) center;
+  background-size: cover;
+}
+.footer-main {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 15px;
+  background-color: var(--bitcoin-orange);
+}
+.footer-main--links {
+  display: flex;
+  flex-direction: column;
+}
+.footer--link {
+  color: var(--just-white);
+  text-decoration: none;
+  padding: 4px 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+}
+.footer-main--img {
+  display: flex;
+  align-items: center;
+}
+.footer--img {
+  width: 75px;
+  height: 60px;
+  margin-right: 30px;
+  background: url(assets/images/footer.svg) center;
   background-size: cover;
 }
