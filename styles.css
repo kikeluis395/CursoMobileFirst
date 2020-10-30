@@ -136,9 +136,10 @@ main {
 }
 .main-tables-container {
   display: flex;
+  align-content: center;
   width: 70%;
   min-width: 230px;
-  max-width: 235px;
+  max-width: 480px;
   margin: auto;
   height: auto; 
   overflow-x: scroll;
@@ -149,7 +150,6 @@ main {
   width:70%;
   scroll-snap-align: center;
   min-width: 235px;
-  height: 300px;
   margin: 0 auto;
   font-family: "Inter", sans-serif;
 }
@@ -170,7 +170,7 @@ main {
   align-items: center;
   width:90%;
   min-width: 230px;
-  max-width: 300px;
+  max-width: 250px;
   height: 159px;
   margin: 0 auto;
 }
@@ -235,6 +235,7 @@ main {
   min-width: 320px;
   height: auto;
   padding: 20px;
+  margin-top: 40px;
   background-color: var(--warm-black);
 }
 .main-product-detail .batata-logo {
@@ -370,7 +371,7 @@ main {
   scroll-snap-align: center;
   width: 100%;
   min-width: 190px;
-  max-width: 300px;
+  max-width: 250px;
   padding: 31px 20px 24px;
   margin: 30px 10px 65px 10px;
   border-radius: 8px;
@@ -379,6 +380,7 @@ main {
 }
 .plans--card .plans--card-head {
   position:absolute;
+  width: 100px;
   left: calc(50% - 50px);
   top: -15px;
   padding: 8px;
@@ -386,8 +388,16 @@ main {
   font-weight: bold;
   line-height: 1.5rem;
   border-radius: 8px;
-  background-color: var(--bitcoin-orange);
   color: var(--just-white);
+}
+.plans--card .blue {
+  background-color: var(--secondary-blue);
+}
+.plans--card .black {
+  background-color: var(--warm-black);
+}
+.plans--card .orange {
+    background-color: var(--bitcoin-orange);
 }
 .plans--card-title {
   margin-top: 10px;
@@ -395,11 +405,8 @@ main {
   font-size: 1.4rem;
   line-height: 1.8rem;
   margin: auto;
-
 }
-
 .plans--card-price {
-  position: relative;
   font-size: 52px;
   font-weight: bold;
   font-family: "Inter", sans-serif;
@@ -407,11 +414,10 @@ main {
   letter-spacing: -0.4rem;
 }
 .plans--card-price .dolar {
-  position: absolute;
-  left: calc(50% - 40px);
-  top: 10px;
+  vertical-align: super;
   font-size: 1.2rem;
   line-height: 1.5rem;
+  letter-spacing: 0.3rem;
 }
 .plans--card-description {
   margin-bottom: 16px;
@@ -432,8 +438,16 @@ main {
   color: var(--warm-black);
   padding: 12px;
   background-color: var(--off-white);
-  border: 2px solid var(--bitcoin-orange);
   border-radius: 4px;
+}
+.blackbutton {
+  border: 2px solid var(--warm-black);
+}
+.orangebutton {
+  border: 2px solid var(--bitcoin-orange);
+}
+.bluebutton {
+  border: 2px solid var(--secondary-blue);
 }
 .plans--card-right {
   margin-left: 8px;

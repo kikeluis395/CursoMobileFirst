@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">  
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="css/tablet.css" media="(min-width: 930px)">
+  <link rel="stylesheet" href="css/desktop.css" media="(min-width:1164px)">
   <title>Batabit</title>
 </head>
 <body>
@@ -13,16 +15,18 @@
     <div class="header--title-container">
       <h1>La proxima revolución en el intercambio de criptomonedas</h1>
       <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias</p>
-      <a href="" class="header--button">Conoce Nuestros Planes <span></span></a>
+      <a href="#plans" class="header--button">Conoce Nuestros Planes <span></span></a>
     </div>
   </header>
   <main>
     <section class="main-exchange-container">
-      <div class="backgroundImg"></div>
-      <div class="main-exchange-container--title">
-        <h2>Visibilizamos todas las tasas de cambio.</h2>
-        <p>Traemos informacion en tiempo real de las casas de cambio y las monedas más importantes del mundo</p>
-      </div>
+      <section class="main-exchange--img-title">
+        <div class="backgroundImg"></div>
+        <div class="main-exchange-container--title">
+          <h2>Visibilizamos todas las tasas de cambio.</h2>
+          <p>Traemos informacion en tiempo real de las casas de cambio y las monedas más importantes del mundo</p>
+        </div>
+      </section>
       <section class="main-tables-container">
         <div class="main-currency-table">
           <p class="currency-table--title">Monedas</p>
@@ -130,7 +134,7 @@
     <section class="bitcoin-img-container">
       <h2>Conócelo hoy.</h2>
     </section>
-    <section class="plans-container">
+    <section class="plans-container" id="plans">
       <div class="plans-container--title">
         <h2>Escoge el plan que mejor se ajuste a ti.</h2>
         <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
@@ -138,23 +142,25 @@
       <section class="plans--cards-container-slide">
         <div class="plans--cards-container">
           <article class="plans--card">
-            <p class="plans--card-title">Pago Anual</p>
-            <p class="plans--card-price"><span class="dolar">$</span>99</p>
+            <p class="plans--card-head black">Mas accesible</p>
+            <p class="plans--card-title">Pago Mensual</p>
+            <p class="plans--card-price"><span class="dolar">$</span>12</p>
             <p class="plans--card-description">*Ahorras $129 comparado al plan mensual.</p>
-            <button class="plans--card-button">Escoger este <span class="plans--card-right"></span></button>
+            <button class="plans--card-button blackbutton">Escoger este <span class="plans--card-right "></span></button>
           </article>
           <article class="plans--card">
-            <p class="plans--card-head">Recomendado</p>
+            <p class="plans--card-head orange">Recomendado</p>
             <p class="plans--card-title">Pago Anual</p>
             <p class="plans--card-price"><span class="dolar">$</span>99</p>
             <p class="plans--card-description">*Ahorras $129 comparado al plan mensual.</p>
-            <button class="plans--card-button">Escoger este <span class="plans--card-right"></span></button>
+            <button class="plans--card-button orangebutton">Escoger este <span class="plans--card-right "></span></button>
           </article>
           <article class="plans--card">
-            <p class="plans--card-title">Pago Anual</p>
-            <p class="plans--card-price"><span class="dolar">$</span>99</p>
+            <p class="plans--card-head blue">Mas popular</p>
+            <p class="plans--card-title">Pago Premium</p>
+            <p class="plans--card-price"><span class="dolar">$</span>120</p>
             <p class="plans--card-description">*Ahorras $129 comparado al plan mensual.</p>
-            <button class="plans--card-button">Escoger este <span class="plans--card-right"></span></button>
+            <button class="plans--card-button bluebutton">Escoger este <span class="plans--card-right "></span></button>
           </article>
         </div>
       </section>
