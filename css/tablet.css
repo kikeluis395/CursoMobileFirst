@@ -29,6 +29,8 @@ header img {
 }
 .plans--cards-container {
   justify-content: center;
+  overflow: hidden;
+  max-width:700px;
 }
 .footer-main--links {
   flex-direction: row;

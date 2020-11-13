@@ -357,6 +357,7 @@ main {
   display: flex;
   width: 100%;
   min-width: 195px;
+  max-width: 195px;
   margin: auto;
   height: auto; 
   overflow-x: scroll;
